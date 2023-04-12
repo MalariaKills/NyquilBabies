@@ -10,9 +10,33 @@
   </head>
 
   <body>
-    <%= link_to "Home", root_path %>
-    <%= link_to "About", about_path %>
-    <%= link_to "Contact", contact_path %>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <%= link_to "Nyquil Babies Premium Gold", root_path, class: "navbar-brand" %>
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "Contact", contact_path, class: "nav-link" %></li>
+        </ul>
+      </div>
+    </nav>
+
     <%= yield %>
+
+    <!-- Page Content -->
+    
+
+    <!-- Footer -->
+    <footer class="small text-muted">
+      <div class="container">
+        <hr>
+        <center>
+          <p>2023 NyQuil Babies</p>
+        </center>
+      </div>
+    </footer>
+
   </body>
 </html>
